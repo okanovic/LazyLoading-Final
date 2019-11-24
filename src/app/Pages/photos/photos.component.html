@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1 class="text-center mt-4 mb-4">{{title}}</h1>
+            <ul class="list-group">
+                <li class="list-group-item mt-2" *ngFor="let photo of allPhotos">
+                    <div class="row">
+                        <div class="col">
+                            <p> <strong>Title: </strong>{{photo.title}} </p>
+                            <p> <strong>Url: </strong>{{photo.url}} </p>
+                        </div>
+                        <div class="col"><img class="float-right" src="{{photo.thumbnailUrl}}" alt="">
+                        </div>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1 class="text-center mt-4 mb-4">{{title}}</h1>
+            <ul class="list-group">
+                <li class="list-group-item mt-2" *ngFor="let users of allUsers">
+                    <p> <strong>Name: </strong>{{users.name}} </p>
+                    <p> <strong>Username: </strong>{{users.username}} </p>
+                    <p> <strong>E-Mail: </strong>{{users.email}} </p>
+                    <p> <strong>Adress: </strong>{{users.address.street}} {{users.address.suite}} {{users.address.city}}
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

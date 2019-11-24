@@ -1,0 +1,49 @@
+<div class="container mt-2">
+    <div class="row text-center">
+        <div class="col">
+            <div class="card" [routerLink]="['/posts']">
+                <div class="card-body">
+                    <p class="card-text">Posts</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" [routerLink]="['/comments']">
+                <div class="card-body">
+                    <p class="card-text">Comments</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-body" [routerLink]="['/albums']">
+                    <p class="card-text">Albums</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <div class="card-body" [routerLink]="['/photos']">
+                    <p class="card-text">Photos</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card">
+                <div class="card-body" [routerLink]="['/todos']">
+                    <p class="card-text">Todos</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card">
+                <div class="card-body" [routerLink]="['/users']">
+                    <p class="card-text">Users</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<router-outlet></router-outlet>

@@ -13,7 +13,7 @@ export class AlbumsComponent implements OnInit {
   constructor(private albumsService:AlbumsService) { }
 
   async ngOnInit() {
-    return await this.albumsService.getAlbums().subscribe(albums => this.allAlbums = albums, error => console.error(error))
+    this.allAlbums = this.albumsService.getAlbums()
   }
 
 }

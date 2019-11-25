@@ -11,10 +11,8 @@ export class UsersComponent implements OnInit {
   allUsers = []
   constructor(private usersService: UsersService) { }
 
-  async ngOnInit() {
-    return await this.usersService.getUsers().subscribe(users => this.allUsers = users, error => console.log(error));
-
-    /* gerçekleşmesi zaman alan herşey için request asenkron çalışmalı */
+  ngOnInit() {
+    this.allUsers = this.usersService.getUsers()
   }
 
 }

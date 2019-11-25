@@ -13,7 +13,7 @@ export class CommentsComponent implements OnInit {
   constructor(private commentsService:CommentsService) { }
 
   async ngOnInit() {
-   return await this.commentsService.getComments().subscribe(comments => this.allComments = comments, error => console.error(error))
+   this.allComments = this.commentsService.getComments()
   }
 
 }

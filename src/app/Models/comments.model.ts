@@ -1,6 +1,6 @@
 export interface IComments {
-    userId?:number;
     id?:number;
-    title:string;
+    name:string;
+    email:string;
     body:string;
 }

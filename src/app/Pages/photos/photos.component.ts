@@ -12,7 +12,7 @@ export class PhotosComponent implements OnInit {
   constructor(private photosService:PhotosService) { }
 
   async ngOnInit() {
-    return await this.photosService.getPhotos().subscribe(photo => this.allPhotos = photo, error => console.error(error))
+    this.allPhotos = this.photosService.getPhotos()
   }
 
 }

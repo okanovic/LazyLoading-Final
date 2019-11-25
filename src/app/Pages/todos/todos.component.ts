@@ -12,7 +12,7 @@ export class TodosComponent implements OnInit {
   constructor(private todosService:TodosService) { }
 
   async ngOnInit() {
-   return await this.todosService.getTodos().subscribe(todo => this.allTodos = todo, error => console.error(error))
+   this.allTodos = this.todosService.getTodos()
   }
 
 }

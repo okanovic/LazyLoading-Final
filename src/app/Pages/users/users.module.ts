@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { UsersComponent } from './users.component';
+import { RouterModule } from '@angular/router';
 
 export const usersRouting = [
   { path: '', component: UsersComponent }
@@ -8,7 +9,8 @@ export const usersRouting = [
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    RouterModule.forChild(usersRouting)
   ],
   exports: [],
   declarations: [UsersComponent],
